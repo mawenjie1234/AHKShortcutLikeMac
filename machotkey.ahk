@@ -49,26 +49,26 @@ if A_Args.Length() > 0 {
 ; File
 #T::Send ^t
 +#T::Send +^t
-#N::Send ^n
-+#N::Send +^n
+!N::Send ^n
++!N::Send +^n
 #O::Send ^o
 #W::Send ^w
 #+W::Send #w
-#S::Send ^s
+!S::Send ^s
 #P::Send ^p
 #+P::Send #p
 ; Edit
-#Z::Send ^z
-+#Z::Send ^y
-#X::Send ^x
-#C::Send ^c
-#V::Send ^v
+!Z::Send ^z
++!Z::Send ^y
+!X::Send ^x
+!C::Send ^c
+!V::Send ^v
 !+#V::
   clipboard = %clipboard%
   Send ^v
 return
-#A::Send ^a
-#F::Send ^f
+!A::Send ^a
+!F::Send ^f
 #G::Send {F3}
 +#G::Send +{F3}
 !#F::Send ^h
